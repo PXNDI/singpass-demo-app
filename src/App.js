@@ -5,7 +5,7 @@ function App() {
   const scope = "openid";
   const response_type = "code";
   const client_id = "tLRDBkf1CNy5Rsi34mEKuOD5EpQAwjIq";
-  const redirect_uri = "https://lovecarelearn4all.netlify.app/Homepage";
+  const redirect_uri = "https://singpassdemoappserver.netlify.app/";
   const nonce = crypto.randomUUID();
   const state = crypto.randomUUID();
   const url =
