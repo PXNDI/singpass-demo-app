@@ -5,22 +5,16 @@ import App from './App';
 import Callback from "./callback";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Routing = () => {
-  return(
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}></Route>
-      <Route path="/callback" element={<Callback />}></Route> 
-    </Routes>
-  </BrowserRouter>
-  )
-}
-
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <Routing />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/callback" element={<Callback />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
+
 
