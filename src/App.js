@@ -5,7 +5,7 @@ function App() {
   const scope = "openid";
   const response_type = "code";
   const client_id = "tLRDBkf1CNy5Rsi34mEKuOD5EpQAwjIq";
-  const redirect_uri = "https://singpassdemoappserver.netlify.app/";
+  const redirect_uri = "https://singpassdemoapp.netlify.app/callback";
   const nonce = crypto.randomUUID();
   const state = crypto.randomUUID();
   const url =
@@ -52,22 +52,25 @@ function App() {
             Integrate with our suite of Singpass APIs to save time and money on
             customer acquisition.
           </p>
-          <div style={{ clear: "both", textAlign: "center" , marginTop: "20px"}}><button
-            type="submit"
-            class="flex-none rounded-md bg-gray-300 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-            onClick={() => (window.location.href = url)}
+          <div
+            style={{ clear: "both", textAlign: "center", marginTop: "20px" }}
           >
-            Login with{" "}
-            <img
-              src="/images/Singpass-logo.png"
-              alt="logo"
-              width="105px"
-              height="20px"
-              paddingLeft="5px"
-              paddingTop="3px"
-            />
-          </button></div>
-          
+            <button
+              type="submit"
+              class="flex-none rounded-md bg-gray-300 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              onClick={() => (window.location.href = url)}
+            >
+              Login with{" "}
+              <img
+                src="/images/Singpass-logo.png"
+                alt="logo"
+                width="105px"
+                height="20px"
+                paddingLeft="5px"
+                paddingTop="3px"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>
