@@ -1,2 +1,2 @@
 /* /index.html 200
-/api/*  https://singpassdemoappserver.netlify.app/:splat  200
+/functions/*  https://singpassdemoappserver.netlify.app/:splat  200
