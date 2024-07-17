@@ -4,8 +4,8 @@ function App() {
   const authurl = "https://stg-id.singpass.gov.sg/auth?";
   const scope = "openid";
   const response_type = "code";
-  const client_id = "tLRDBkf1CNy5Rsi34mEKuOD5EpQAwjIq";
-  const redirect_uri = "https://singpassdemoapp.netlify.app/callback";
+  const client_id = "sRqX0QNPOkRX11Czq7zFyLBNhVUYGXvp";
+  const redirect_uri = "https://spdemoapp.netlify.app/callback";
   const nonce = crypto.randomUUID();
   const state = crypto.randomUUID();
   const url =

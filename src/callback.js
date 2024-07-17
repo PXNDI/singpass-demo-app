@@ -7,7 +7,7 @@ function Callback() {
   const [UUID, setUUID] = useState("");
   useEffect(() => {
     const getIDToken= async () => {
-      const url = `https://singpassdemoappserver.netlify.app/.netlify/functions/api?code=${code}`;
+      const url = `https://spdemoappserver.netlify.app/.netlify/functions/api?code=${code}`;
       const { data } = await axios.get(url);
       setNRIC(data.data);
       setUUID(data.UUID);
